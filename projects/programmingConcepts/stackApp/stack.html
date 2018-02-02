@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head>
+<meta charset="UTF-8">
+
+
+<title>Stack Visualization</title>
+
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+<script src = "stack.js"></script>
+
+</head>
+
+<body>
+
+<div id = "space">
+<h2>Stack Data Structure</h2>
+
+<p>
+A stack is an Abstract Data Type (ADT), commonly used in most programming languages. 
+It is named stack as it behaves like a real-world stack, like a deck of cards or a pile of plates, etc.
+This program stores the filenames for the different ball color images in a stack which are used to display them on the screen.  
+</p>
+<p>
+By clicking the push button, the user can add the selected color ball to the top of the stack.
+By clicking the pop button, the user can remove the top of the stack.
+The program also keeps track of the top of the stack which can be viewed using the peek button. 
+If the user attempts to peek the empty stack the program will return the empty stack message.
+</p>
+<select id = "ballSelect">
+  <option value="white">White</option>
+  <option value="red">Red</option>
+  <option value="orange">Orange</option>
+  <option value="yellow">Yellow</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+  <option value="indigo">Indigo</option>
+  <option value="violet">Violet</option>
+  <option value="black">Black</option>
+</select>
+
+<button type="button" id = "btnPush">Push</button>
+<button type="button" id = "btnPop">Pop</button>
+<button type="button" id = "btnPeek">Peek</button>
+
+<h3 class = "peekObj">Last Ball Viewed</h3>
+
+<div id = "peek"></div>
+
+</div>
+
+<h4>Current Stack</h4>
+<ul id = "list"></ul>
+
+
+
+<a href = "../../../projects.html">Back to Projects >>></a>
+</body>
+</html>
