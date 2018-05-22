@@ -1,14 +1,152 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="home.js"></script>
     <title>Wesley Clevenger</title>
 </head>
 
 <body>
-    
-    <h1>Site has moved...</h1>
-    
+
+    <div id="navbar">
+        <ul>
+            <li id="homeTab">Home</li>
+            <li id="aboutTab">About</li>
+            <li id="projectsTab">Projects</li>
+            <li id="contactTab">Contact</li>
+        </ul>
+
+        <div id="closeMenu">
+            <img src="images/close.png" />
+        </div>
+    </div>
+
+    <div id="openMenu">
+        <img src="images/hamIcon.png" />
+    </div>
+
+
+    <section class="pages" id="home">
+        <h1>Hello my name is Wesley Clevenger, I want to bring your stories to life...</h1>
+    </section>
+
+    <section class="pages" id="about">
+        <h1>A Little Bit About Me</h1>
+        <h3>When it comes to computers and technology, I know a bit of everything.</h3>
+
+        <div class="thirds">
+            <img src="images/school.png" />
+            <h4>Education</h4>
+            <p>I am a graduate from Stephen F. Austin State University. During my time there, I focused on learning the syntax for various coding languages. </p>
+            <h3>My Degrees</h3>
+            <p>Associates in Science from Eastfield college.</p>
+            <p>Bachelors in Information Technology from Stephen F. Austin State University</p>
+        </div>
+
+
+        <div class="thirds">
+            <img src="images/technology.png" />
+            <h4>Programming Experience</h4>
+            <p>Through the years I have produced many mini applications either for school assignments or for my own betterment. Click the button to see what I've made!</p>
+            <a id="aboutBtn" href="school.html">More</a>
+            <h3>Languages I Speak</h3>
+            <p>Java, JavaScript, PHP, MySQL, HTML5, CSS, C++ </p>
+        </div>
+
+
+        <div class="thirds">
+            <img src="images/work.png" />
+            <h4>Past Work Experience</h4>
+            <p>During my time at Staples I consulted with customers on office and technology needs and made informed product recommendations and proactively sought out customers to assist across the sales floor.</p>
+        </div>
+    </section>
+
+    <section class="pages" id="projects">
+        <h1>Some Projects I've Made</h1>
+
+        <table id="gallery" border="0" align="center" cellspacing="45px">
+            <tr>
+                <td>
+                    <div class="image">
+                        <a href="projects/profileCard/profileCard.html"><img src="img/i1.jpg" width="100%" height="100%" id="i1" /></a>
+                    </div>
+                    <p>An interactive profile card made using JQuery and CSS.</p>
+                </td>
+                <td>
+                    <div class="image">
+                        <a href="projects/square/square.html"><img src="img/i2.jpg" width="100%" height="100%" id="i2" /></a>
+                    </div>
+                    <p>Animation using pure CSS.</p>
+                </td>
+                <td>
+                    <div class="image">
+                        <a href="projects/chess/chess.html"><img src="img/i3.jpg" width="100%" height="100%" id="i3" /></a>
+                    </div>
+                    <p>A 3D Chess board made with pure CSS.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="image">
+                        <a href="projects/page/page.html"><img src="img/i4.jpg" width="100%" height="100%" id="i4" /></a>
+                    </div>
+                    <p>Pagination using CSS</p>
+                </td>
+                <td>
+                    <div class="image">
+                        <a href="projects/diamond/diamond.html"><img src="img/i5.jpg" width="100%" height="100%" id="i5" /></a>
+                    </div>
+                    <p>A simple diamond using CSS</p>
+                </td>
+                <td>
+                    <div class="image">
+                        <a href="projects/slider/slider.html"><img src="img/i6.jpg" width="100%" height="100%" id="i6" /></a>
+                    </div>
+                    <p>A simple product slider using CSS and JQUERY.</p>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section class="pages" id="contact">
+        <h1>Lets Work Together</h1>
+
+        <h2>You can reach me on these social media platforms</h2>
+        <div id="media">
+            <a href="https://www.linkedin.com/in/wesley-clevenger-226578155/"><img class ="icons" src="images/li.png" />LinkedIn</a>
+            <a href="https://github.com/clevengewr"><img class ="icons"  src="images/gh.png" />GitHub</a>
+        </div>
+<div id ="contactImg">
+        <img src="images/contact.png" />
+        </div>
+
+<!--
+        <h2>or you can contact me directly through email</h2>
+
+        <div id="formDiv">
+            Email:<br>
+            <input type="text" id="email">
+            <br> Message:<br>
+            <textarea id="content" rows="20" cols="30"></textarea>
+            <br>
+            <button id="btnSubmit">Send Email</button>
+            <span id="message"></span>
+        </div>
+-->
+
+    </section>
+
 </body>
+
 </html>
